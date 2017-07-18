@@ -3,12 +3,16 @@
  */
 public class Fibonacci {
     public static void main(String[] args){
-        int a = 1;
+        int a = 0;
         int b = 1;
         int c;
-        for(byte quantity = 1; quantity <= 10; quantity++){
+        System.out.print(a + "," + b + ",");
+        for(int quantity = 1; quantity <= 8; quantity++){
             c=a+b;
-            System.out.println(a + "+" + b + "=" + c);
+            if(quantity <8)
+            System.out.print(c + ",");
+            else
+                System.out.println(c);
             a=b;
             b=c;
 
